@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
     background: #1b1c22;
     font-family: "Work Sans";
@@ -18,7 +22,3 @@ body {
         border-color: rgba(255, 255, 255, 0);
     }
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
