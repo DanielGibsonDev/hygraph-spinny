@@ -1,24 +1,24 @@
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    background: #1b1c22;
+    font-family: "Work Sans";
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.text-shadow-simple {
+    text-shadow: 4px 3px 0 #4a4aff, -14px 7px 0 #1b1c22;
 }
 
-.App {
-    max-width: 1024px;
-    margin: 0 auto;
+.flashing-border {
+    @apply border-4 border-white;
+
+    animation: flash 500ms infinite;
 }
 
-.product {
-    margin-bottom: 1rem;
-    border: 2px solid #cccc;
-    padding: 1rem;
+@keyframes flash {
+    50% {
+        border-color: rgba(255, 255, 255, 0);
+    }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
