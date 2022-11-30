@@ -1,4 +1,4 @@
-import {useGetProducts} from "./useRequest";
+import {useGetNames} from "./useRequest";
 import {useEffect, useState} from "react";
 // @ts-ignore
 import {SpinnyWheel} from "./components/spinny-wheel.jsx";
@@ -17,7 +17,7 @@ const B = 'right';
 export const App = () => {
   const [a, setA] = useState<string[] | []>([])
   const [b, setB] = useState<string[] | []>([])
-  const {data, status} = useGetProducts();
+  const {data, status} = useGetNames();
 
   useEffect(() => {
     setA(data ? data.map((p) => p.name) : [])
