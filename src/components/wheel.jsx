@@ -1,7 +1,7 @@
 import React, {useLayoutEffect, useRef, useState} from "react";
 import p2 from "p2";
 
-import {getFontSize, getMapValue} from "../utils/helpers";
+import {getFontSize, getMapValue} from "../utils/helpers.js";
 import palomaLogo from '../images/paloma-logo.png'
 import palomaName from '../images/paloma-name.png'
 

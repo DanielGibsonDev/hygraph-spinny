@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from "react";
 
-import {isBrowser} from "../utils/helpers";
+import {isBrowser} from "../utils/helpers.js";
 
 export const ResizeContainer = ({children, className}) => {
   const [dimensions, setDimensions] = useState({

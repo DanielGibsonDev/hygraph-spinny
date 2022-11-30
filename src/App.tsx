@@ -1,6 +1,7 @@
 import {useGetProducts} from "./useRequest";
 import {useState} from "react";
-import {SpinnyWheel} from "./components/spinny-wheel";
+// @ts-ignore
+import {SpinnyWheel} from "./components/spinny-wheel.jsx";
 
 
 const A = 'left';
